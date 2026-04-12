@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(cp -r \"C:/_ryanDev/earth_and_beyond_temp/\"* \"C:/_ryanDev/earth_and_beyond/\")",
+      "Bash(cp \"C:/_ryanDev/earth_and_beyond_temp/\".* \"C:/_ryanDev/earth_and_beyond/\")",
+      "Bash(rm -rf \"C:/_ryanDev/earth_and_beyond_temp\")",
+      "Bash(npm install:*)",
+      "Bash(mkdir -p src/components src/pages src/data src/hooks)",
+      "Bash(rm -f src/App.css src/assets/react.svg src/assets/vite.svg src/assets/hero.png)",
+      "Bash(npx vite:*)",
+      "Bash(mkdir -p src/assets)",
+      "Bash(cp \"src/logo/Earth and Beyond logo design \\(5\\).png\" src/assets/logo.png)"
+    ]
+  }
+}
