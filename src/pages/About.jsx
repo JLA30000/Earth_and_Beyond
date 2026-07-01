@@ -32,13 +32,11 @@ const coreValues = [
 const leaders = [
   {
     name: 'Aatmaj Nagarkar',
-    detail: '10th Grade',
-    bio: 'Aatmaj Nagarkar is a tenth-grader at Acton-Boxborough Regional High School who is deeply interested in stellar astrophysics. His recent work includes a machine learning science fair project focused on analyzing supernovae yields.',
+    detail: 'Co-founder | 12th',
   },
   {
     name: 'August Patterson',
-    detail: '10th Grade',
-    bio: 'August Patterson is a tenth-grader at Acton-Boxborough Regional High School with a focus on Environmental Science. His recent work includes revising and advocating for a stronger sustainability policy in the Acton-Boxborough Regional School District.',
+    detail: 'Co-founder | 12th',
   },
 ];
 
@@ -103,7 +101,7 @@ export default function About() {
         <div className="section-inner">
           <div className="leadership-layout">
             <div className="leadership-label fade-in-up">
-              <h2 className="section-heading">Co-Presidents</h2>
+              <h2 className="section-heading">Co-founders</h2>
             </div>
 
             <div className="bio-grid stagger">
@@ -111,7 +109,10 @@ export default function About() {
                 <article key={leader.name} className="bio-card fade-in-up">
                   <div className="bio-card__meta">{leader.detail}</div>
                   <h3 className="bio-card__title">{leader.name}</h3>
-                  <p>{leader.bio}</p>
+                  <div
+                    className="bio-card__description-blank"
+                    aria-label="Description to be added"
+                  />
                 </article>
               ))}
             </div>

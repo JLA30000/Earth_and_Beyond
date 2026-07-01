@@ -22,7 +22,7 @@ export default function Footer() {
             <h2 className="site-footer__heading">Navigate</h2>
             <nav className="site-footer__nav" aria-label="Footer">
               <Link to="/">Home</Link>
-              <Link to="/initiatives">Events</Link>
+              <Link to="/initiatives">Initiatives</Link>
               <Link to="/about">About Us</Link>
               <Link to="/contact-us">Contact Us</Link>
               <Link to="/take-action">Take Action</Link>
@@ -32,8 +32,7 @@ export default function Footer() {
           <div className="site-footer__group">
             <h2 className="site-footer__heading">Contact</h2>
             <div className="site-footer__contact">
-              <a href="mailto:aatmaj.nagarkar@gmail.com">aatmaj.nagarkar@gmail.com</a>
-              <a href="mailto:aqua3717@gmail.com">aqua3717@gmail.com</a>
+              <a href="mailto:earthandbeyondinc@gmail.com">earthandbeyondinc@gmail.com</a>
             </div>
           </div>
 

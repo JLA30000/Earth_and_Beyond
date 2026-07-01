@@ -35,8 +35,7 @@ export default function Contact() {
               programming, or explore ways to get involved.
             </p>
             <div className="contact-emails">
-              <a href="mailto:aatmaj.nagarkar@gmail.com">aatmaj.nagarkar@gmail.com</a>
-              <a href="mailto:aqua3717@gmail.com">aqua3717@gmail.com</a>
+              <a href="mailto:earthandbeyondinc@gmail.com">earthandbeyondinc@gmail.com</a>
             </div>
             <div style={{ marginTop: '1.75rem' }}>
               <SocialLinks linkClassName="inline-social-link" />

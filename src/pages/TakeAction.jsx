@@ -43,13 +43,13 @@ export default function TakeAction() {
             <div className="take-action-panel fade-in-up">
               <h2 className="section-heading">Donate</h2>
               <p className="section-intro take-action-panel__copy">
-                Donations help fund classes, camps, special events, and the outreach work that
+                Donations help fund classes, camps, special initiatives, and the outreach work that
                 allows Earth and Beyond to keep expanding access to Astronomy and Environmental
                 Science.
               </p>
               <div>
                 <a
-                  href="mailto:aatmaj.nagarkar@gmail.com?subject=Earth%20and%20Beyond%20Donation"
+                  href="mailto:earthandbeyondinc@gmail.com?subject=Earth%20and%20Beyond%20Donation"
                   className="btn btn-light"
                 >
                   Donate Now!

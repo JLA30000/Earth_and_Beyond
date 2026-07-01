@@ -4,10 +4,8 @@ import ScrollToTop from './components/ScrollToTop';
 import SiteChrome from './components/SiteChrome';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import EventDetail from './pages/EventDetail';
-import Events from './pages/Events';
 import Home from './pages/Home';
-import Login from './pages/Login';
+import Initiatives from './pages/Initiatives';
 import TakeAction from './pages/TakeAction';
 
 export default function App() {
@@ -20,11 +18,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/initiatives" element={<Events />} />
-            <Route path="/initiatives/:slug" element={<EventDetail />} />
+            <Route path="/initiatives" element={<Initiatives />} />
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/take-action" element={<TakeAction />} />
-            <Route path="/login" element={<Login />} />
             <Route path="/events" element={<Navigate to="/initiatives" replace />} />
             <Route path="/events/:slug" element={<Navigate to="/initiatives" replace />} />
             <Route path="/contact" element={<Navigate to="/contact-us" replace />} />

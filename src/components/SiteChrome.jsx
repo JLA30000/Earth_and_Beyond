@@ -5,7 +5,7 @@ import { SocialLinks } from './SocialLinks';
 
 const primaryLinks = [
   { to: '/', label: 'Home' },
-  { to: '/initiatives', label: 'Events' },
+  { to: '/initiatives', label: 'Initiatives' },
   { to: '/about', label: 'About Us' },
   { to: '/contact-us', label: 'Contact Us' },
 ];
@@ -42,9 +42,6 @@ export default function SiteChrome() {
             </Link>
 
             <div className="home-header__actions">
-              <NavLink to="/login" className="home-header__login">
-                Login
-              </NavLink>
               <Link to="/take-action" className="btn btn-cream home-header__cta">
                 Take Action
               </Link>
@@ -84,9 +81,6 @@ export default function SiteChrome() {
           </nav>
 
           <div className="site-navbar__utility">
-            <NavLink to="/login" className="site-login-link">
-              Login
-            </NavLink>
             <Link to="/take-action" className="btn btn-cream site-navbar__cta">
               Take Action
             </Link>

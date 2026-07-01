@@ -10,8 +10,13 @@ export default function PageHero({
   return (
     <section
       className={`page-hero ${className}`.trim()}
-      style={{ backgroundImage: `url(${image})`, minHeight }}
+      style={{ minHeight }}
     >
+      <div
+        className="page-hero__bg"
+        style={{ backgroundImage: `url(${image})` }}
+        aria-hidden="true"
+      />
       <div className={`page-hero__inner page-hero__inner--${align}`}>
         {children ? (
           <div

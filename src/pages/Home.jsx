@@ -5,10 +5,31 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const homeHeroImage =
   'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1800&q=80';
-const schoolImage =
-  'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1400&q=80';
 const actionImage =
   'https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80';
+
+const impactMetrics = [
+  {
+    value: '000+',
+    label: 'Students reached',
+    description: 'Placeholder for total students served.',
+  },
+  {
+    value: '00',
+    label: 'Workshops hosted',
+    description: 'Placeholder for completed workshop sessions.',
+  },
+  {
+    value: '00',
+    label: 'Curriculum lessons',
+    description: 'Placeholder for NGSS-aligned lessons.',
+  },
+  {
+    value: '00',
+    label: 'Community partners',
+    description: 'Placeholder for collaborators and host sites.',
+  },
+];
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -62,34 +83,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-steel">
+      <section className="section-steel impact-section">
         <div className="section-inner">
-          <div className="split-layout">
-            <div className="content-stack fade-in-up">
-              <h2 className="section-heading">Our Experience</h2>
-              <ul className="feature-list">
-                <li>
-                  We are a group of Acton-Boxborough Regional High School students with strong
-                  interests in STEM, outreach, and youth education.
-                </li>
-                <li>
-                  Our work focuses on bringing Astronomy and Environmental Science into local
-                  spaces where those subjects are often underrepresented.
-                </li>
-              </ul>
-              <div>
-                <Link to="/about" className="btn btn-cream">
-                  Learn more
-                </Link>
-              </div>
-            </div>
+          <div className="impact-header fade-in-up center-text">
+            <h2 className="section-heading">Our Impact</h2>
+            <p className="section-intro">
+              Placeholder impact numbers for Earth and Beyond programming.
+            </p>
+          </div>
 
-            <div className="media-frame fade-in-up">
-              <img
-                src={schoolImage}
-                alt="Acton-Boxborough High School building"
-              />
-            </div>
+          <div className="impact-grid stagger">
+            {impactMetrics.map((metric) => (
+              <article key={metric.label} className="impact-card fade-in-up">
+                <div className="impact-card__value">{metric.value}</div>
+                <h3 className="impact-card__label">{metric.label}</h3>
+                <p>{metric.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -111,7 +121,7 @@ export default function Home() {
               <p className="section-intro">
                 Whether you want to volunteer your time or support our programming through a
                 donation, every contribution helps Earth and Beyond grow its classes, camps,
-                and student-led events.
+                and student-led initiatives.
               </p>
               <div>
                 <Link to="/take-action" className="btn btn-cream">
@@ -146,7 +156,7 @@ export default function Home() {
               {subscribed ? (
                 <p className="confirmation-copy">
                   Thank you! You&apos;re signed up and will be the first to hear about upcoming
-                  events and new initiatives.
+                  programming and new initiatives.
                 </p>
               ) : (
                 <form className="email-form" onSubmit={handleSubscribe}>
@@ -167,8 +177,8 @@ export default function Home() {
               )}
 
               <p className="supporting-copy">
-                Sign up to be the first to know about our events. We aim to host events every
-                month and post updates about our current initiatives.
+                Sign up to be the first to know about our initiatives. We aim to post updates
+                about current programming and upcoming opportunities.
               </p>
             </div>
           </div>
