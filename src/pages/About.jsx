@@ -109,10 +109,6 @@ export default function About() {
                 <article key={leader.name} className="bio-card fade-in-up">
                   <div className="bio-card__meta">{leader.detail}</div>
                   <h3 className="bio-card__title">{leader.name}</h3>
-                  <div
-                    className="bio-card__description-blank"
-                    aria-label="Description to be added"
-                  />
                 </article>
               ))}
             </div>
