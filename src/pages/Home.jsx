@@ -10,24 +10,16 @@ const actionImage =
 
 const impactMetrics = [
   {
-    value: '000+',
-    label: 'Students reached',
-    description: 'Placeholder for total students served.',
+    value: '100+',
+    label: 'Students',
   },
   {
-    value: '00',
-    label: 'Workshops hosted',
-    description: 'Placeholder for completed workshop sessions.',
+    value: '6',
+    label: 'Workshops',
   },
   {
-    value: '00',
-    label: 'Curriculum lessons',
-    description: 'Placeholder for NGSS-aligned lessons.',
-  },
-  {
-    value: '00',
-    label: 'Community partners',
-    description: 'Placeholder for collaborators and host sites.',
+    value: '6',
+    label: 'Lessons',
   },
 ];
 
@@ -87,9 +79,6 @@ export default function Home() {
         <div className="section-inner">
           <div className="impact-header fade-in-up center-text">
             <h2 className="section-heading">Our Impact</h2>
-            <p className="section-intro">
-              Placeholder impact numbers for Earth and Beyond programming.
-            </p>
           </div>
 
           <div className="impact-grid stagger">
@@ -97,7 +86,6 @@ export default function Home() {
               <article key={metric.label} className="impact-card fade-in-up">
                 <div className="impact-card__value">{metric.value}</div>
                 <h3 className="impact-card__label">{metric.label}</h3>
-                <p>{metric.description}</p>
               </article>
             ))}
           </div>
