@@ -835,6 +835,10 @@ button:focus-visible {
   background: #142936;
 }
 
+.initiative-chapter--2025 {
+  padding: clamp(3.5rem, 6vw, 4.8rem) 0;
+}
+
 .chapter-heading {
   max-width: 48rem;
   margin-bottom: 3rem;
@@ -933,7 +937,7 @@ button:focus-visible {
 }
 
 .archive-gallery__collage {
-  width: min(100%, 52rem);
+  width: min(100%, 44rem);
   display: grid;
   justify-items: center;
   gap: 0.8rem;
@@ -943,7 +947,7 @@ button:focus-visible {
 
 .archive-gallery__image {
   width: 100%;
-  aspect-ratio: 1.13;
+  aspect-ratio: 1.08;
   overflow: hidden;
   border-radius: 4px;
 }
@@ -953,7 +957,7 @@ button:focus-visible {
   height: 100%;
   object-fit: cover;
   object-position: center 50%;
-  transform: scale(1.28);
+  transform: scale(1.38);
 }
 
 .archive-gallery__collage figcaption {
@@ -983,6 +987,11 @@ button:focus-visible {
 .resource-card__image {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+.resource-card__image--art {
+  object-fit: contain;
+  background: var(--space-navy);
 }
 
 .resource-card__image--map {

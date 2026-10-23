@@ -109,7 +109,7 @@ export default function Initiatives() {
         </div>
       </section>
 
-      <section id="workshops-2025" className="section-cream initiative-chapter" aria-labelledby="workshops-2025-title">
+      <section id="workshops-2025" className="section-cream initiative-chapter initiative-chapter--2025" aria-labelledby="workshops-2025-title">
         <div className="section-inner">
           <header className="chapter-heading chapter-heading--centered fade-in-up">
             <p className="eyebrow">Imagining what&rsquo;s out there</p>
