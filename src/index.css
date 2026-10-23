@@ -775,13 +775,15 @@ ul {
 }
 
 .quiz-feature__image img {
-  /* Show the poster at (88, 18), sized 932 x 1160 in the 1180 x 1200 source. */
+  /* Frame the new quiz poster, cropping away its wide outer border. */
   position: absolute;
-  width: calc(100% * 1180 / 932);
+  width: 100%;
+  height: 100%;
   max-width: none;
-  height: auto;
-  left: calc(-100% * 88 / 932);
-  top: calc(-100% * 18 / 1160);
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: 29% center;
 }
 
 .initiative-nav {

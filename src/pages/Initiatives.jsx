@@ -84,9 +84,9 @@ export default function Initiatives() {
             </article>
             <article className="workshop-story">
               <div className="content-stack fade-in-up">
-                <p className="eyebrow">McCarthy-Towne, Merriam, Gates &amp; Douglas</p>
+                <p className="eyebrow">McCarthy-Towne &amp; Merriam</p>
                 <h3>A sweet introduction to solar energy</h3>
-                <p>Students in our 2026 workshops made s&rsquo;mores using solar ovens, exploring how passive and active solar energy can be utilized in everyday life.</p>
+                <p>Students in our 2026 workshops at McCarthy-Towne and Merriam made s&rsquo;mores using solar ovens, exploring how passive and active solar energy can be utilized in everyday life.</p>
               </div>
               <div className="photo-pair">
                 <figure className="fade-in-up"><img src={solarOven} alt="A homemade cardboard solar oven with a foil reflector heating a s'more" loading="lazy" width="901" height="1200" /></figure>
@@ -138,7 +138,7 @@ export default function Initiatives() {
               <div className="resource-card__body content-stack">
                 <p className="eyebrow">Curriculum · Coming Soon</p>
                 <h3>Understanding Habitable Worlds</h3>
-                <p>Our upcoming NGSS-aligned habitability curriculum explores a big question: what makes a world suitable for life? Connect astronomy and environmental science through the study of habitable worlds.</p>
+                <p>Our upcoming NGSS-informed habitability curriculum explores a big question: what makes a world suitable for life? Connect astronomy and environmental science through the study of habitable worlds.</p>
                 <p className="resource-status">Curriculum Materials Coming Soon</p>
               </div>
             </article>

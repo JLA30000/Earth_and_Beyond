@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import quizImage from '../pictures/instagram-space-quiz.jpg';
+import quizImage from '../pictures/instagram-black-holes-quiz.png';
 
 const homeHeroImage =
   'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1800&q=80';
@@ -70,7 +70,7 @@ export default function Home() {
             rel="noreferrer"
             aria-label="Explore Earth and Beyond's space quizzes on Instagram"
           >
-            <img src={quizImage} alt="Earth and Beyond's Black Holes Quiz: six questions with increasing difficulty" loading="lazy" width="1180" height="1200" />
+            <img src={quizImage} alt="Earth and Beyond's Black Holes Quiz: six questions with increasing difficulty" loading="lazy" width="1924" height="1724" />
           </a>
           <div className="content-stack fade-in-up">
             <p className="eyebrow">A little curiosity, every week</p>
