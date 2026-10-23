@@ -111,7 +111,7 @@ export default function Initiatives() {
 
       <section id="workshops-2025" className="section-cream initiative-chapter" aria-labelledby="workshops-2025-title">
         <div className="section-inner">
-          <header className="chapter-heading fade-in-up">
+          <header className="chapter-heading chapter-heading--centered fade-in-up">
             <p className="eyebrow">Imagining what&rsquo;s out there</p>
             <h2 id="workshops-2025-title" className="section-heading">2025 Workshops</h2>
             <p className="section-intro">Students from our 2025 workshops drew their visions of extraterrestrial life before an interactive lesson about life on other planets.</p>
@@ -121,7 +121,6 @@ export default function Initiatives() {
               <div className="archive-gallery__image">
                 <img src={workshopCollage} alt="A collage of students’ drawings imagining extraterrestrial life, including aliens, planets, and rockets." loading="lazy" width="1414" height="2000" />
               </div>
-              <figcaption>Students&rsquo; visions of extraterrestrial life, drawn before an interactive lesson on life on other planets.</figcaption>
             </figure>
           </div>
         </div>
