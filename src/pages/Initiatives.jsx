@@ -1,7 +1,6 @@
 ﻿import PageHero from '../components/PageHero';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import alienDrawing from '../pictures/workshop-2025-alien.jpg';
-import spaceDrawing from '../pictures/workshop-2025-space.jpg';
 import agencyMessages from '../pictures/agency-cards-messages.jpg';
 import agencyArt from '../pictures/agency-cards-art.jpg';
 import satellite from '../pictures/diy-satellite.jpg';
@@ -10,6 +9,7 @@ import smores from '../pictures/solar-oven-smores.jpg';
 import dannysPlace from '../pictures/dannys-place.jpg';
 import spaceApps from '../pictures/nasa-space-apps.jpg';
 import solarSystem from '../pictures/solar-system-map.jpg';
+import workshopCollage from '../pictures/workshop-2025-collage.png';
 
 const initiativesHeroImage =
   'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1800&q=80';
@@ -117,10 +117,11 @@ export default function Initiatives() {
             <p className="section-intro">Students from our 2025 workshops drew their visions of extraterrestrial life before an interactive lesson about life on other planets.</p>
           </header>
           <div className="archive-gallery">
-            <figure className="fade-in-up"><img src={alienDrawing} alt="A student's imagined Martian creatures among mountains and moons" loading="lazy" /><figcaption>Imagining life on another world.</figcaption></figure>
-            <figure className="fade-in-up"><img src={spaceDrawing} alt="A student's drawing of a rocket traveling between Earth and the Sun" loading="lazy" /><figcaption>Exploring the worlds beyond Earth.</figcaption></figure>
+            <figure className="archive-gallery__collage fade-in-up">
+              <img src={workshopCollage} alt="A collage of students’ drawings imagining extraterrestrial life, including aliens, planets, and rockets." loading="lazy" width="1414" height="2000" />
+              <figcaption>Students&rsquo; visions of extraterrestrial life, drawn before an interactive lesson on life on other planets.</figcaption>
+            </figure>
           </div>
-          <a className="text-link archive-link" href="https://canva.link/uxrw1733n49i49y" target="_blank" rel="noreferrer">View The 2025 Student Artwork Collage On Canva <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
