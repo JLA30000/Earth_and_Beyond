@@ -27,10 +27,10 @@ export default function Initiatives() {
       </PageHero>
 
       <nav className="initiative-nav" aria-label="Explore our initiatives">
-        <a href="#upcoming-workshop">Upcoming workshop</a>
-        <a href="#workshops-2026">2026 workshops</a>
-        <a href="#workshops-2025">2025 workshops</a>
-        <a href="#our-resources">Our resources</a>
+        <a href="#upcoming-workshop">Upcoming Workshop</a>
+        <a href="#workshops-2026">2026 Workshops</a>
+        <a href="#workshops-2025">2025 Workshops</a>
+        <a href="#our-resources">Our Resources</a>
       </nav>
 
       <section id="upcoming-workshop" className="section-cream initiative-chapter" aria-labelledby="upcoming-title">
@@ -103,7 +103,7 @@ export default function Initiatives() {
               <p className="eyebrow">Connecting with a global community</p>
               <h3 id="space-apps-title">2025 &amp; 2026 NASA Amplification Collaborators</h3>
               <p>As a NASA Amplification Collaborator in 2025 and 2026, Earth and Beyond helps expand awareness and engagement around the NASA Space Apps Challenge. We support its mission of bringing innovators, creators, and problem-solvers together to use NASA&rsquo;s open data to address real-world challenges and inspire new discoveries.</p>
-              <a href="https://www.spaceappschallenge.org/" target="_blank" rel="noreferrer" className="text-link">Explore the NASA Space Apps Challenge <span aria-hidden="true">↗</span></a>
+              <a href="https://www.spaceappschallenge.org/" target="_blank" rel="noreferrer" className="text-link">Explore The NASA Space Apps Challenge <span aria-hidden="true">↗</span></a>
             </div>
           </aside>
         </div>
@@ -120,7 +120,7 @@ export default function Initiatives() {
             <figure className="fade-in-up"><img src={alienDrawing} alt="A student's imagined Martian creatures among mountains and moons" loading="lazy" /><figcaption>Imagining life on another world.</figcaption></figure>
             <figure className="fade-in-up"><img src={spaceDrawing} alt="A student's drawing of a rocket traveling between Earth and the Sun" loading="lazy" /><figcaption>Exploring the worlds beyond Earth.</figcaption></figure>
           </div>
-          <a className="text-link archive-link" href="https://canva.link/uxrw1733n49i49y" target="_blank" rel="noreferrer">View the 2025 student artwork collage on Canva <span aria-hidden="true">↗</span></a>
+          <a className="text-link archive-link" href="https://canva.link/uxrw1733n49i49y" target="_blank" rel="noreferrer">View The 2025 Student Artwork Collage On Canva <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
@@ -135,21 +135,21 @@ export default function Initiatives() {
             <article className="resource-card fade-in-up">
               <img className="resource-card__image resource-card__image--art" src={alienDrawing} alt="Student artwork imagining life on Mars" loading="lazy" />
               <div className="resource-card__body content-stack">
-                <p className="eyebrow">Curriculum · Coming soon</p>
+                <p className="eyebrow">Curriculum · Coming Soon</p>
                 <h3>Understanding Habitable Worlds</h3>
                 <p>Our upcoming NGSS-aligned habitability curriculum explores a big question: what makes a world suitable for life? Connect astronomy and environmental science through the study of habitable worlds.</p>
-                <p className="resource-status">Curriculum materials coming soon.</p>
+                <p className="resource-status">Curriculum Materials Coming Soon</p>
               </div>
             </article>
             <article className="resource-card fade-in-up">
-              <a href="https://solar-system-missions.netlify.app/" target="_blank" rel="noreferrer" aria-label="Launch the solar system simulation">
+              <a href="https://solar-system-missions.netlify.app/" target="_blank" rel="noreferrer" aria-label="Launch The Solar System Simulation">
                 <img className="resource-card__image resource-card__image--map" src={solarSystem} alt="Illustrated solar system map from the Goldilocks Mission simulation" loading="lazy" />
               </a>
               <div className="resource-card__body content-stack">
-                <p className="eyebrow">Interactive · Explore now</p>
+                <p className="eyebrow">Interactive · Explore Now</p>
                 <h3>Solar System Simulation</h3>
                 <p>Choose a planet and start a Goldilocks Mission. Explore planetary conditions and investigate what makes a planet habitable in our interactive solar system simulation.</p>
-                <a href="https://solar-system-missions.netlify.app/" target="_blank" rel="noreferrer" className="btn btn-cream">Launch the simulation <span aria-hidden="true">&nbsp;↗</span></a>
+                <a href="https://solar-system-missions.netlify.app/" target="_blank" rel="noreferrer" className="btn btn-cream">Launch The Simulation <span aria-hidden="true">&nbsp;↗</span></a>
               </div>
             </article>
           </div>

@@ -488,6 +488,11 @@ ul {
     linear-gradient(180deg, #6f917e 0%, #5f8296 100%);
 }
 
+.home-mission-section .section-intro {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.75;
+}
+
 .section-navy {
   background:
     radial-gradient(circle at 85% 10%, rgba(240, 199, 106, 0.14), transparent 28%),
@@ -760,13 +765,23 @@ ul {
 }
 
 .quiz-feature__image {
+  position: relative;
   display: block;
+  width: 100%;
   max-width: 31rem;
+  aspect-ratio: 932 / 1160;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 .quiz-feature__image img {
+  /* Show the poster at (88, 18), sized 932 x 1160 in the 1180 x 1200 source. */
+  position: absolute;
+  width: calc(100% * 1180 / 932);
+  max-width: none;
   height: auto;
-  border-radius: 4px;
+  left: calc(-100% * 88 / 932);
+  top: calc(-100% * 18 / 1160);
 }
 
 .initiative-nav {
