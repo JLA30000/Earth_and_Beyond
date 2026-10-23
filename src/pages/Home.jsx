@@ -2,26 +2,12 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import quizImage from '../pictures/instagram-space-quiz.jpg';
 
 const homeHeroImage =
   'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1800&q=80';
 const actionImage =
   'https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80';
-
-const impactMetrics = [
-  {
-    value: '100+',
-    label: 'Students',
-  },
-  {
-    value: '6',
-    label: 'Workshops',
-  },
-  {
-    value: '6',
-    label: 'Lessons',
-  },
-];
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -75,19 +61,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-steel impact-section">
-        <div className="section-inner">
-          <div className="impact-header fade-in-up center-text">
-            <h2 className="section-heading">Our Impact</h2>
-          </div>
-
-          <div className="impact-grid stagger">
-            {impactMetrics.map((metric) => (
-              <article key={metric.label} className="impact-card fade-in-up">
-                <div className="impact-card__value">{metric.value}</div>
-                <h3 className="impact-card__label">{metric.label}</h3>
-              </article>
-            ))}
+      <section className="section-cream" aria-labelledby="space-quizzes-title">
+        <div className="section-inner quiz-feature">
+          <a
+            className="quiz-feature__image fade-in-up"
+            href="https://www.instagram.com/earthandbeyondinc/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Explore Earth and Beyond's space quizzes on Instagram"
+          >
+            <img src={quizImage} alt="Earth and Beyond's Black Holes Quiz: six questions with increasing difficulty" loading="lazy" width="1180" height="1200" />
+          </a>
+          <div className="content-stack fade-in-up">
+            <p className="eyebrow">A little curiosity, every week</p>
+            <h2 id="space-quizzes-title" className="section-heading">How well do you know our universe?</h2>
+            <p className="section-intro">
+              Put your space knowledge to the test with our weekly Instagram quizzes.
+              From black holes to the worlds beyond Earth, there is always something
+              new to discover. Follow along and try the next challenge.
+            </p>
+            <a className="btn btn-cream" href="https://www.instagram.com/earthandbeyondinc/" target="_blank" rel="noreferrer">
+              Follow @earthandbeyondinc <span aria-hidden="true">&nbsp;↗</span>
+            </a>
           </div>
         </div>
       </section>
