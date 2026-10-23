@@ -535,6 +535,11 @@ ul {
   margin-top: 1.2rem;
 }
 
+.about-page p {
+  font-size: clamp(1.18rem, 1.45vw, 1.32rem);
+  line-height: 1.8;
+}
+
 .center-text {
   text-align: center;
 }
@@ -783,7 +788,8 @@ ul {
   left: 0;
   top: 0;
   object-fit: cover;
-  object-position: 29% center;
+  object-position: 25% center;
+  transform: scale(1.035);
 }
 
 .initiative-nav {
@@ -922,21 +928,31 @@ button:focus-visible {
 
 .archive-gallery__collage {
   width: min(100%, 52rem);
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+  margin: 0;
+  text-align: center;
+}
+
+.archive-gallery__image {
+  width: 100%;
   aspect-ratio: 1.13;
   overflow: hidden;
   border-radius: 4px;
 }
 
-.archive-gallery img {
+.archive-gallery__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 50%;
+  transform: scale(1.28);
 }
 
 .archive-gallery__collage figcaption {
-  margin-top: 0;
-  padding-top: 0.7rem;
+  max-width: 42rem;
+  padding: 0;
 }
 
 .archive-link {
@@ -1014,7 +1030,7 @@ button:focus-visible {
     margin-bottom: 2rem;
   }
 
-  .archive-gallery img {
+.archive-gallery__image img {
     max-height: none;
   }
 
@@ -1275,6 +1291,16 @@ button:focus-visible {
   margin-top: 1.1rem;
   max-width: 28rem;
   color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1.2rem, 1.5vw, 1.35rem);
+  line-height: 1.75;
+}
+
+.contact-page .contact-emails a,
+.contact-page .input,
+.contact-page .textarea,
+.contact-page .btn,
+.contact-page .confirmation-copy {
+  font-size: 1.08rem;
 }
 
 .contact-emails {

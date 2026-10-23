@@ -1,6 +1,6 @@
 ﻿import PageHero from '../components/PageHero';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import alienDrawing from '../pictures/workshop-2025-alien.jpg';
+import curriculumCover from '../pictures/habitability-curriculum-cover.png';
 import agencyMessages from '../pictures/agency-cards-messages.jpg';
 import agencyArt from '../pictures/agency-cards-art.jpg';
 import satellite from '../pictures/diy-satellite.jpg';
@@ -118,7 +118,9 @@ export default function Initiatives() {
           </header>
           <div className="archive-gallery">
             <figure className="archive-gallery__collage fade-in-up">
-              <img src={workshopCollage} alt="A collage of students’ drawings imagining extraterrestrial life, including aliens, planets, and rockets." loading="lazy" width="1414" height="2000" />
+              <div className="archive-gallery__image">
+                <img src={workshopCollage} alt="A collage of students’ drawings imagining extraterrestrial life, including aliens, planets, and rockets." loading="lazy" width="1414" height="2000" />
+              </div>
               <figcaption>Students&rsquo; visions of extraterrestrial life, drawn before an interactive lesson on life on other planets.</figcaption>
             </figure>
           </div>
@@ -134,7 +136,7 @@ export default function Initiatives() {
           </header>
           <div className="resource-grid">
             <article className="resource-card fade-in-up">
-              <img className="resource-card__image resource-card__image--art" src={alienDrawing} alt="Student artwork imagining life on Mars" loading="lazy" />
+              <img className="resource-card__image resource-card__image--art" src={curriculumCover} alt="Illustration for Understanding Habitable Worlds: What Makes a World Suitable for Life?" loading="lazy" width="1828" height="946" />
               <div className="resource-card__body content-stack">
                 <p className="eyebrow">Curriculum · Coming Soon</p>
                 <h3>Understanding Habitable Worlds</h3>

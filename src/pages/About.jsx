@@ -47,7 +47,7 @@ export default function About() {
   useScrollAnimation();
 
   return (
-    <>
+    <div className="about-page">
       <PageHero image={aboutHeroImage} align="center" wide>
         <div className="fade-in-up">
           <h1 className="page-hero__title">
@@ -115,6 +115,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
