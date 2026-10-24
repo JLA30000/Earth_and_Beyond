@@ -978,6 +978,8 @@ button:focus-visible {
 }
 
 .resource-card {
+  display: flex;
+  flex-direction: column;
   background: var(--cream);
   color: var(--dark-text);
   border-radius: 4px;
@@ -985,6 +987,8 @@ button:focus-visible {
 }
 
 .resource-card__image {
+  width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
@@ -1000,7 +1004,20 @@ button:focus-visible {
 }
 
 .resource-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.1rem;
   padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.resource-card__body > * + * {
+  margin-top: 0;
+}
+
+.resource-card__body > :last-child {
+  margin-top: auto;
 }
 
 .resource-status {
